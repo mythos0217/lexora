@@ -873,7 +873,7 @@ body {
 
     <div style="text-align:center;padding:20px 0 8px;font-size:0.75rem;color:var(--fg3)">
       Lexora — Academic Vocabulary App<br>
-      Powered by Gemini API (gemini-2.5-flash)
+      Powered by Gemini API (gemini-3.8-flash)
     </div>
   </div>
 
@@ -1511,7 +1511,7 @@ Example format:
 [{"en":"example","ph":"/ɪɡˈzɑːmpəl/","ja":"例","ex":"This is an example sentence."}]
 Return ONLY the JSON array, no markdown, no explanation.`;
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${state.apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${state.apiKey}`;
   const body = {
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: { temperature: 0.7, maxOutputTokens: 8192 }
